@@ -1,0 +1,10 @@
+1. template.py file              : to create some common files and folders.
+2. logger\__init__.py            : to setup the log directory which contains the log_file(with curr_timestamp as name) generated on running the project.
+3. setup.py                      : to define our project version, name, author, etc. Also run requirements.txt file. Also create {project_name}.egg-info module w/c contain info about package(project)
+4. src\exceptions\__init__.py    : to create custom exception.
+5. src\constants\__init__.py     : to define constant variable for each component in pipeline that later used in whole project.
+6. src\configuration\__init__.py : to connect constants to generate path for each components in pipeline. These paths indicate path of inputs for each components.
+7. src\components                : this dir contains all the components of pipeline.
+    7-a. data_ingestion.py       : to get data from different source like database, API, etc (in my case, it's in local directory), and save it in artifact folders
+    7-b. data_transformation.py  : to apply transformations on the columns pf the data.
+    7-c. model_training.py       : train different modela and save the best one as .pkl file

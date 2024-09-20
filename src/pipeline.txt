@@ -1,0 +1,9 @@
+constant file -> configuration file -> data_ingestion
+
+# Data Transformation 
+
+constant file -> configuration file -> data_transformation -> utils file ->data_transformation
+
+# Model Training
+
+constant file -> configuration file -> model_training -> utils file(helper_function)
